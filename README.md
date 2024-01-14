@@ -38,7 +38,7 @@ npm run build:commonjs
 
 This script utilizes the TypeScript compiler with the -m commonjs flag.
 
-### ECMAScript Module Build
+#### ECMAScript Module Build
 
 To compile the ECMAScript module, run the following script:
 
