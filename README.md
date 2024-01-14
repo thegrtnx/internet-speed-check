@@ -1,4 +1,4 @@
-# Internet Speed Checker
+# 🛜 Internet Speed Checker
 
 This is a [typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx) helping you check a user internet upload and download speed in real-time.
 
