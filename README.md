@@ -31,9 +31,7 @@ npm install
 
 ```
 
-## ✍️ Learn More
-
-### Project Build
+## 🛠️ Project Build
 
 This project includes build scripts for both CommonJS and ECMAScript modules.
 
@@ -44,6 +42,19 @@ To compile the CommonJS module, use the following script:
 ```bash
 npm run build:commonjs
 ```
+
+This script utilizes the TypeScript compiler with the -m commonjs flag.
+
+### ECMAScript Module Build
+
+To compile the ECMAScript module, run the following script:
+
+```bash
+npm run build:esm
+```
+
+This script uses the TypeScript compiler with the [`-m esnext --outDir dist/esm`] flags.
+The [`--outDir`] flag specifies the output directory for the ECMAScript module.
 
 ## 👋 Issues and Contributions
 
