@@ -4,7 +4,7 @@ This is a [typescript](https://www.typescriptlang.org/) project created by [`Abo
 
 ## 👌 Requirement
 
-- Node.js should be installed in your system. If not, you can download and install from [`Node.js Website`](https://nodejs.org/en/download)
+Node.js should be installed in your system. If not, you can download and install from [`Node.js Website`](https://nodejs.org/en/download)
 
 ## 🔧 Installation
 
