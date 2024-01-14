@@ -24,13 +24,6 @@ npm install
 
 ```
 
-- To compile and start the application:
-
-```bash
- npm start
-
-```
-
 ## 🛠️ Project Build
 
 This project includes build scripts for both CommonJS and ECMAScript modules.
@@ -55,6 +48,18 @@ npm run build:esm
 
 This script uses the TypeScript compiler with the [`-m esnext --outDir dist/esm`] flags.
 The [`--outDir`] flag specifies the output directory for the ECMAScript module.
+
+## ▶️ Start the application
+
+To compile and start the application:
+
+```bash
+ npm start
+
+```
+
+- Type 1 to run application in CommonJS
+- Type 2 to run application in ESM
 
 ## 👋 Issues and Contributions
 
