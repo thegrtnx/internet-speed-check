@@ -1,9 +1,9 @@
 {
 	"compilerOptions": {
 		"jsx": "react",
-		"target": "esnext",
-		"module": "commonjs",
-		"outDir": "./dist/cjs",
+		"target": "ESNext",
+		"module": "ESNext",
+		"outDir": "./dist/esm",
 		"rootDir": "./src",
 		"composite": true,
 		"esModuleInterop": true,
@@ -14,10 +14,5 @@
 		"strict": true
 	},
 	"include": ["src/**/*.ts"],
-	"exclude": ["node_modules"],
-	"references": [
-		{
-			"path": "./tsconfig.esm.json"
-		}
-	]
+	"exclude": ["node_modules"]
 }

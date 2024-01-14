@@ -10,18 +10,18 @@ rl.question("Which module format do you want to use? (1) CommonJS or (2) ECMAScr
 		case "1":
 		case "commonjs":
 			console.log("Using CommonJS module format...");
-			startApp("dist/index.js");
+			startApp("dist/cjs/index.js");
 			break;
 
 		case "2":
 		case "esm":
 			console.log("Using ECMAScript module format...");
-			startApp("dist/index.mjs");
+			startApp("dist/esm/index.mjs");
 			break;
 
 		default:
 			console.log("Invalid choice. Using CommonJS module format by default...");
-			startApp("dist/index.js");
+			startApp("dist/cjs/index.js");
 			break;
 	}
 
