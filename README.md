@@ -33,16 +33,17 @@ npm install
 
 ## ✍️ Learn More
 
-- Start: This script runs both the build (compilation) and start (execution) steps. It uses the;
+### Project Build
+
+This project includes build scripts for both CommonJS and ECMAScript modules.
+
+#### CommonJS Build
+
+To compile the CommonJS module, use the following script:
 
 ```bash
-npm run build
-
+npm run build:commonjs
 ```
-
-to compile TypeScript files with [tsc], and then it runs the compiled JavaScript file using [`node dist/index.js`].
-
-- Build: This script simply runs the TypeScript compiler (tsc) to compile your TypeScript files.
 
 ## 👋 Issues and Contributions
 
