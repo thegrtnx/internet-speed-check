@@ -44,4 +44,6 @@ to compile TypeScript files with [tsc], and then it runs the compiled JavaScript
 
 - Build: This script simply runs the TypeScript compiler (tsc) to compile your TypeScript files.
 
+## 👋 Issues and Contributions
+
 You can submit issues [here](https://github.com/thegrtnx/internet-speed-check/issues) - your feedback and contributions are welcome!
