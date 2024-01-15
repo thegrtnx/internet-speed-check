@@ -20,6 +20,8 @@ I'll provide support for other packages with time. Happy to collaborate with any
 
 ## The gist
 
+- JSX
+
 ```jsx
 import React, { useEffect, useState } from "react";
 import speedChecker from "internet-speed-checker";
@@ -57,11 +59,16 @@ function App() {
 }
 ```
 
+- TSX
+
 ```tsx
 import React from "react";
 import speedChecker from "internet-speed-checker";
 
 function App() {
+	const [uploadSpeed, setUploadSpeed] = useState<string | null>(null);
+	const [downloadSpeed, setDownloadSpeed] = useState<string | null>(null);
+
 	useEffect(() => {
 		const download = setInterval(() => {
 			const formattedDownloadSpeedString = speedChecker.getFormattedDownloadSpeed();
