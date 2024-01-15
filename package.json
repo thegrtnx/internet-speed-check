@@ -1,6 +1,6 @@
 {
 	"name": "internet-speed-checker",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"description": "Check internet upload and download speed in real-time",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
