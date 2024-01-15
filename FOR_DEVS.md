@@ -11,7 +11,7 @@ Node.js should be installed in your system. If not, you can download and install
 Install the required modules:
 
 ```bash
-npm i internet-speed-checker
+npm install
 
 ```
 
