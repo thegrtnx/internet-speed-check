@@ -19,8 +19,23 @@
 		"build:esm": "tsc -m esnext --outDir dist/esm",
 		"rename:files": "node scripts/rename-files.js"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thegrtnx/internet-speed-check.git"
+	},
+	"keywords": [
+		"internet-speed-checker",
+		"upload",
+		"speed",
+		"download",
+		"speed"
+	],
 	"author": "thegrtnx",
 	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thegrtnx/internet-speed-check/issues"
+	},
+	"homepage": "https://github.com/thegrtnx/internet-speed-check#readme",
 	"dependencies": {
 		"fs-extra": "^11.2.0",
 		"readline-sync": "^1.4.10"
