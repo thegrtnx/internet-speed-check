@@ -5,9 +5,9 @@ declare class InternetSpeedChecker {
     private convertSpeed;
     private measureDownloadSpeed;
     private measureUploadSpeed;
-    startSpeedCheck(): void;
-    private displaySpeeds;
     getFormattedDownloadSpeed(): string;
     getFormattedUploadSpeed(): string;
+    startSpeedCheck(): void;
 }
-export default InternetSpeedChecker;
+declare const speedChecker: InternetSpeedChecker;
+export default speedChecker;

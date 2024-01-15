@@ -83,26 +83,21 @@ class InternetSpeedChecker {
             }
         }
     }
-    startSpeedCheck() {
-        setInterval(() => {
-            this.measureDownloadSpeed();
-            this.measureUploadSpeed();
-            this.displaySpeeds();
-        }, 1000);
-    }
-    displaySpeeds() {
-        const formattedDownloadSpeed = `${this.convertSpeed(this.downloadSpeed).value.toFixed(2)} ${this.convertSpeed(this.downloadSpeed).unit}`;
-        const formattedUploadSpeed = `${this.convertSpeed(this.uploadSpeed).value.toFixed(2)} ${this.convertSpeed(this.uploadSpeed).unit}`;
-        console.log(`Download Speed: ${formattedDownloadSpeed}`);
-        console.log(`Upload Speed: ${formattedUploadSpeed}`);
-    }
     getFormattedDownloadSpeed() {
         return `${this.convertSpeed(this.downloadSpeed).value.toFixed(2)} ${this.convertSpeed(this.downloadSpeed).unit}`;
     }
     getFormattedUploadSpeed() {
         return `${this.convertSpeed(this.uploadSpeed).value.toFixed(2)} ${this.convertSpeed(this.uploadSpeed).unit}`;
     }
+    startSpeedCheck() {
+        setInterval(() => {
+            this.measureDownloadSpeed();
+            this.measureUploadSpeed();
+            this.getFormattedDownloadSpeed();
+            this.getFormattedUploadSpeed();
+        }, 1000);
+    }
 }
 const speedChecker = new InternetSpeedChecker();
 speedChecker.startSpeedCheck();
-exports.default = InternetSpeedChecker;
+exports.default = speedChecker;

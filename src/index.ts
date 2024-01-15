@@ -94,22 +94,6 @@ class InternetSpeedChecker {
 		}
 	}
 
-	public startSpeedCheck(): void {
-		setInterval(() => {
-			this.measureDownloadSpeed();
-			this.measureUploadSpeed();
-			this.displaySpeeds();
-		}, 1000);
-	}
-
-	private displaySpeeds(): void {
-		const formattedDownloadSpeed = `${this.convertSpeed(this.downloadSpeed).value.toFixed(2)} ${this.convertSpeed(this.downloadSpeed).unit}`;
-		const formattedUploadSpeed = `${this.convertSpeed(this.uploadSpeed).value.toFixed(2)} ${this.convertSpeed(this.uploadSpeed).unit}`;
-
-		console.log(`Download Speed: ${formattedDownloadSpeed}`);
-		console.log(`Upload Speed: ${formattedUploadSpeed}`);
-	}
-
 	public getFormattedDownloadSpeed(): string {
 		return `${this.convertSpeed(this.downloadSpeed).value.toFixed(2)} ${this.convertSpeed(this.downloadSpeed).unit}`;
 	}
@@ -117,9 +101,18 @@ class InternetSpeedChecker {
 	public getFormattedUploadSpeed(): string {
 		return `${this.convertSpeed(this.uploadSpeed).value.toFixed(2)} ${this.convertSpeed(this.uploadSpeed).unit}`;
 	}
+
+	public startSpeedCheck(): void {
+		setInterval(() => {
+			this.measureDownloadSpeed();
+			this.measureUploadSpeed();
+			this.getFormattedDownloadSpeed();
+			this.getFormattedUploadSpeed();
+		}, 1000);
+	}
 }
 
 const speedChecker = new InternetSpeedChecker();
 speedChecker.startSpeedCheck();
 
-export default InternetSpeedChecker;
+export default speedChecker;

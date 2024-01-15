@@ -3,7 +3,14 @@
 	"version": "0.1.0",
 	"description": "Check internet upload and download speed in real-time",
 	"main": "dist/cjs/index.js",
+	"types": "dist/cjs/index.d.ts",
 	"module": "dist/esm/index.mjs",
+	"exports": {
+		".": {
+			"import": "./dist/esm/index.mjs",
+			"require": "./dist/cjs/index.js"
+		}
+	},
 	"scripts": {
 		"start": "npm run prompt:module",
 		"prompt:module": "node -e \"require('./scripts/module-prompt')\"",
