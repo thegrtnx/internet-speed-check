@@ -35,7 +35,7 @@
 	"bugs": {
 		"url": "https://github.com/thegrtnx/internet-speed-check/issues"
 	},
-	"homepage": "https://github.com/thegrtnx/internet-speed-check#readme",
+	"homepage": "https://speed.thegrtnx.com.ng",
 	"dependencies": {
 		"fs-extra": "^11.2.0",
 		"readline-sync": "^1.4.10"
