@@ -21,7 +21,7 @@ rl.question("Which module format do you want to use? (1) CommonJS or (2) ECMAScr
 
 		default:
 			console.log("Invalid choice. Using CommonJS module format by default...");
-			startApp("dist/cjs/index.js");
+			startApp("dist/index.js");
 			break;
 	}
 

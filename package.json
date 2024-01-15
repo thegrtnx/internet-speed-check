@@ -1,21 +1,21 @@
 {
 	"name": "internet-speed-checker",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Check internet upload and download speed in real-time",
-	"main": "dist/cjs/index.js",
-	"types": "dist/cjs/index.d.ts",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"module": "dist/esm/index.mjs",
 	"exports": {
 		".": {
-			"import": "./dist/esm/index.mjs",
-			"require": "./dist/cjs/index.js"
+			"require": "./dist/esm/index.mjs",
+			"import": "./dist/index.js"
 		}
 	},
 	"scripts": {
 		"start": "npm run prompt:module",
 		"prompt:module": "node -e \"require('./scripts/module-prompt')\"",
 		"build": "npm run build:commonjs && npm run build:esm && npm run rename:files",
-		"build:commonjs": "tsc -m commonjs --outDir dist/cjs",
+		"build:commonjs": "tsc -m commonjs  --outDir dist/src",
 		"build:esm": "tsc -m esnext --outDir dist/esm",
 		"rename:files": "node scripts/rename-files.js"
 	},
