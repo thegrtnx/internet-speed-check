@@ -1,5 +1,7 @@
 # 🛜 Internet Speed Checker
 
+![stacked](https://raw.githubusercontent.com/thegrtnx/internet-speed-check/master/img/lightmode.png)
+
 This is a [typescript](https://www.typescriptlang.org/) project created by [`Abolade Greatness`](https://github.com/thegrtnx) helping you check a user internet upload and download speed in real-time.
 
 ## 🔧 Installation
